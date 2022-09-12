@@ -13,7 +13,7 @@ def testStringLib(inputStr):
     print('Reverse of string is', reverseStr(inputStr))
     print('Does string contain apple?', containsWord(inputStr, 'apple'))
     print('Does string contain banana?', containsWord(inputStr, 'banana'))
-    print('Does string contain banana?', containsWord(inputStr, 'fish'))
+    print('Does string contain fish?', containsWord(inputStr, 'fish'))
     print('Is string a palindrome?', isPalindrome(inputStr))
     print('Uppercase of string is', upperCaseStr(inputStr))
     return
@@ -28,7 +28,7 @@ def testWorkerClass(inputStr):
     print('Reverse of string is', worker.reverseStr())
     print('Does string contain apple?', worker.containsWord('apple'))
     print('Does string contain banana?', worker.containsWord('banana'))
-    print('Does string contain banana?', worker.containsWord('fish'))
+    print('Does string contain fish?', worker.containsWord('fish'))
     print('Is string a palindrome?', worker.isPalindrome())
     print('Uppercase of string is', worker.upperCaseStr())
     return
