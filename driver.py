@@ -9,13 +9,28 @@ import sys
 #Function to test the functions in the stringlib module
 def testStringLib(inputStr):
     #Add code to call each of the functions and print the results
+    print('Input string is', inputStr)
+    print('Reverse of string is', reverseStr(inputStr))
+    print('Does string contain apple?', containsWord(inputStr, 'apple'))
+    print('Does string contain banana?', containsWord(inputStr, 'banana'))
+    print('Does string contain banana?', containsWord(inputStr, 'fish'))
+    print('Is string a palindrome?', isPalindrome(inputStr))
+    print('Uppercase of string is', upperCaseStr(inputStr))
     return
 
 #Function to test the methods in the Worker class in the worker module
 def testWorkerClass(inputStr):
     #Add code to create a Worker object
+    worker = Worker(inputStr)
     #Use the object to call each of the methods in the Worker class
     #Print the result of each call
+    print('Input string is', worker.str)
+    print('Reverse of string is', worker.reverseStr())
+    print('Does string contain apple?', worker.containsWord('apple'))
+    print('Does string contain banana?', worker.containsWord('banana'))
+    print('Does string contain banana?', worker.containsWord('fish'))
+    print('Is string a palindrome?', worker.isPalindrome())
+    print('Uppercase of string is', worker.upperCaseStr())
     return
 
 #check to make sure there is a string command line argument
